@@ -1,0 +1,26 @@
+<Script>
+
+	var num = "113";
+	var a = num; 
+	while(num != 0){
+	
+		for (var i = 3;  i < num; i += 2) {	
+			if (num % i == 0){ 	
+				num = 0;
+				console.log("false");
+				break;
+			}
+		}
+		
+		num = num + "";
+		num = num.slice(-1) + num.slice(0, -1);
+		console.log(num);
+		if (num == a){ 	
+			break;
+		}
+	}
+	if(num == a){
+		console.log("true");
+	}
+	
+</Script>
